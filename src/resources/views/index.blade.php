@@ -68,7 +68,7 @@
             </dl>
             <dl>
                 <dt>
-                    <label for="building">建物名<span>※</span></label>
+                    <label for="building">建物名</label>
                 </dt>
                 <dd>
                     <input type="text" id="building" name="building" placeholder="例:千駄ヶ谷マンション101">
@@ -80,10 +80,10 @@
                 </dt>
                 <dd>
                     <div class="select_wrapper">
-                        <select name="category" id="category">
+                        <select name="category_id" id="category">
                             <option disabled selected>選択してください</option>
                             @foreach($categories as $category)
-                            <option value="$category->id">{{ $category->content }}</option>
+                            <option value="{{ $category['id'] }}">{{ $category['content'] }}</option>
                             @endforeach
                         </select>
                     </div>
