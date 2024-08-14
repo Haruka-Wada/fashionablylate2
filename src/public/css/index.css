@@ -1,0 +1,149 @@
+.section-title {
+    width: 100%;
+    height: 100px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-contents-item {
+    width: 65%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.section-contents-item dl {
+    height: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.section-contents-item dt {
+    width: 30%;
+    color: #8B7969;
+}
+
+.section-contents-item dd {
+    width: 70%;
+}
+
+.section-contents-item span {
+    color: red;
+}
+
+input {
+    width: 100%;
+    height: 38px;
+    border: none;
+    background-color: #F4F4F4;
+}
+
+input::placeholder {
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #BEB1A6;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.name-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-form-item {
+    width: 45%;
+}
+
+.gender-form label{
+    font-size: 18px;
+    margin-right: 30px;
+    color: #8B7969;
+}
+
+.gender-form input {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -4px;
+    accent-color: #8B7969;
+}
+
+.tell-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tell-form input{
+    width: 25%;
+    text-align: center;
+}
+
+select {
+    width: 50%;
+    height: 38px;
+    color: #BEB1A6;
+    background-color: #F4F4F4;
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select_wrapper {
+    position: relative;
+}
+
+.select_wrapper::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    content: "▼";
+    font-size: 14px;
+    color: #BEB1A6;
+}
+
+.detail-form {
+    width: 100%;
+    height: 129px;
+    border: none;
+    background-color: #F4F4F4;
+}
+
+textarea::placeholder {
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #BEB1A6;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.section-contents dl:last-of-type {
+    align-items: flex-start;
+}
+
+.section-contents-button {
+    text-align: center;
+}
+
+.section-contents-button button {
+    width: 160px;
+    height: 46px;
+    font-size: 20px;
+    background-color: #837564;
+    color: #fff;
+    border: none;
+}
