@@ -40,7 +40,7 @@
                 <dt>
                     <p>性別<span>※</span></p>
                     <div class="error">
-                        @error('first_name')
+                        @error('gender')
                         {{ $message }}
                         @enderror
                     </div>
@@ -72,6 +72,10 @@
                     <div class="error">
                         @if($errors->has('tell1'))
                         {{ $errors->first('tell1') }}
+                        @elseif($errors->has('tell2'))
+                        {{ $errors->first('tell2')}}
+                        @elseif($errors->has('tell3'))
+                        {{ $errors->first('tell3')}}
                         @endif
                     </div>
                 </dt>
