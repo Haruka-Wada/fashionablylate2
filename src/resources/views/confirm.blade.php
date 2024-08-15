@@ -33,10 +33,10 @@
                 </td>
                 <td class="table-item">
                     <div class="gender-form">
-                        @if($content['gender'] = 1)
+                        @if($contact['gender'] == 1)
                         <input type="text" name="gender" value="1" hidden>
                         <p>男性</p>
-                        @elseif($contact['gender'] = 2)
+                        @elseif($contact['gender'] == 2)
                         <input type="text" name="gender" value="2" hidden>
                         <p>女性</p>
                         @else
@@ -52,7 +52,7 @@
                 </td>
                 <td class="table-item">
                     <p> {{ $contact['email'] }}</p>
-                    <input type="text" id="email" name="email" value="{{ $contact['email'] }}" hidden>
+                    <input type="text" name="email" value="{{ $contact['email'] }}" hidden>
                 </td>
             </tr>
             <tr>
@@ -62,9 +62,9 @@
                 <td>
                     <div class="tell-form">
                         <p>{{ $contact['tell1'] }}{{ $contact['tell2'] }}{{ $contact['tell3'] }}</p>
-                        <input type="text" id="tell" name="tell1" value="{{ $contact['tell1'] }}" hidden>
-                        <input type="text" id="tell" name="tell2" value="{{ $contact['tell2'] }}" hidden>
-                        <input type="text" id="tell" name="tell3" value="{{ $contact['tell3'] }}" hidden>
+                        <input type="text" name="tell1" value="{{ $contact['tell1'] }}" hidden>
+                        <input type="text" name="tell2" value="{{ $contact['tell2'] }}" hidden>
+                        <input type="text" name="tell3" value="{{ $contact['tell3'] }}" hidden>
                     </div>
                 </td>
             </tr>

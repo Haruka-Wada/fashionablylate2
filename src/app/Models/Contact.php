@@ -12,6 +12,8 @@ class Contact extends Model
         'category_id',
         'first_name',
         'last_name',
+        'gender',
+        'email',
         'tell',
         'address',
         'building',
