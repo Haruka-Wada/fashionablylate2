@@ -15,12 +15,12 @@
 
 <body>
 
-    <head class="header">
+    <div class="header">
         <div class="header-title">
             <p>FashionablyLate2</p>
         </div>
         @yield('header-button')
-    </head>
+    </div>
     <main>
         <div class="section-container">
             @yield('section-title')
