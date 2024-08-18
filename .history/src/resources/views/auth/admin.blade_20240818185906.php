@@ -35,7 +35,7 @@
                 <option selected disabled>お問い合わせの種類</option>
                 @foreach($categories as $category)
                 <option value="{{ $category['id'] }}">{{ $category['content'] }}</option>
-                @endforeach
+                @foreach
             </select>
             <input type="date" name="date">
             <div class="search-button">

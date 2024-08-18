@@ -33,17 +33,9 @@
             </select>
             <select name="category">
                 <option selected disabled>お問い合わせの種類</option>
-                @foreach($categories as $category)
-                <option value="{{ $category['id'] }}">{{ $category['content'] }}</option>
-                @endforeach
+                @foreach
+                <option value=""></option>
             </select>
-            <input type="date" name="date">
-            <div class="search-button">
-                <button>検索</button>
-            </div>
-            <div class="reset-button">
-                <button>リセット</button>
-            </div>
         </form>
     </div>
     <div class="contacts-table">
@@ -55,7 +47,7 @@
                 <th>お問い合わせの種類</th>
                 <th></th>
             </tr>
-            @foreach($contacts as $contact)
+            @foreach( $contacts as $contact)
             <tr>
                 <td class="contacts-item-name">{{ $contact['first_name'] }} {{ $contact['last_name'] }}</td>
                 <td>
