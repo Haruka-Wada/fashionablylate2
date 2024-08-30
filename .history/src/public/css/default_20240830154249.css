@@ -1,0 +1,55 @@
+html {
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8B7969;
+}
+
+
+.header-title {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.section-container {
+    width: 100vw;
+}
+
+/* ページネーション　*/
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination li:not(.active) {
+    border: 1px solid #E0DFDE;
+    padding: 4px 12px;
+}
+
+.pagination li:not(:last-child) {
+    border-right: none;
+}
+
+.pagination a {
+    color: #8B7969;
+    text-decoration: none;
+}
+
+.pagination__link {
+    text-decoration: none;
+}
+
+.active {
+    padding: 4px 12px;
+    border: 1px solid #8B7969;
+    background-color: #8B7969;
+    color: #FFF;
+}
